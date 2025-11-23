@@ -25,6 +25,7 @@ void EnemyShip::Update(const GameTime& gameTime)
 	{
 		m_activationSeconds += gameTime.GetElapsedTime();
 		if (m_activationSeconds > 2 && !IsOnScreen()) Deactivate();
+		
 	}
 
 	Ship::Update(gameTime);
@@ -43,4 +44,5 @@ void EnemyShip::Initialize(const Vector2 position, const double delaySeconds)
 void EnemyShip::Hit(const float damage)
 {
 	Ship::Hit(damage);
+	std::cout << "potato" << std::endl;
 }

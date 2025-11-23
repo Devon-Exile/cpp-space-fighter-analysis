@@ -19,7 +19,7 @@ void MainMenuScreen::LoadContent(ResourceManager& resourceManager)
 	// Logo
 	m_pTexture = resourceManager.Load<Texture>("Textures\\Logo.png");
 	m_texturePosition = Game::GetScreenCenter() - Vector2::UNIT_Y * 150;
-
+	
 	// Create the menu items
 	const int COUNT = 2;
 	MenuItem *pItem;
@@ -62,7 +62,7 @@ void MainMenuScreen::Update(const GameTime& gameTime)
 	{
 		pItem->SetAlpha(alpha);
 		isSelected = pItem->IsSelected();
-		pItem->SetColor(isSelected ? Color::WHITE : Color::BLUE);
+		pItem->SetColor(isSelected ? Color::RED : Color::GRAY);
 		pItem->SetTextOffset(isSelected ? Vector2::UNIT_X * offset : Vector2::ZERO);
 	}
 

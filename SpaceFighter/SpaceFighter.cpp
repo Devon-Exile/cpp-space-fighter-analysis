@@ -19,7 +19,7 @@ SpaceFighter::SpaceFighter()
 
 	// Font for displaying the frame rate
 	Font::SetLoadSize(18, true);
-	Font *pFont = GetResourceManager()->Load<Font>("Fonts\\Arialbd.ttf", false);
+	Font *pFont = GetResourceManager()->Load<Font>("Fonts\\Ethnocentric.ttf", false);
 	SetFrameCounterFont(pFont);
 }
 
